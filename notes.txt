@@ -1,0 +1,10 @@
+json placeholder (fake api)
+reqres (fake api)
+
+javascript have also api handel system it;s called 
+fetch()
+
+for api install 3rd party module called
+
+npm install axios
+
