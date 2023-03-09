@@ -8,3 +8,129 @@ for api install 3rd party module called
 
 npm install axios
 
+
+########################################################################
+
+API (Application Programming Interface)
+
+it is a backend application which will communicate with the database and 
+perform the database operations.
+
+API --  backend lang --- java,php,node,c#.net,python
+
+2 types :  
+
+1. SOAP based api ---  data response  xml format 
+
+2. RESTFUL API / REST API --  data response is in JSON format. 
+
+WEB SERVICE METHODS :  
+HTTP get() ---> fetch operation from api  
+, HTTP post() --> when we insert any data into the api 
+, HTTP put() ---> when you will update any data using api 
+, HTTP delete() ---> when you delete any data through the api  
+
+3 types of RESTFUL API :
+
+1.  FAKE RESTFUL API :
+    jsonplaceholder api 
+	reqres.in 
+	
+2. LIVE RESTFUL API :
+    accuweather.in 
+	
+3. USERDEFINED RESTFUL API :
+    this is the api to be developed by the programmer using any backend lang.
+	
+
+API  --- REACT APP :
+
+ENDPOINT OF API :
+
+https://jsonplaceholder.typicode.com/posts/1
+
+RESPONSE FROM THE API :
+
+res.data={
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+res.data.userId
+
+###########################################################
+Alert :
+
+React 
+
+module :   sweetalert module 
+
+E:\React_Work>cd firstapp
+E:\React_Work\firstapp>npm install sweetalert
+
+
+import swal from 'sweetalert';
+
+syntax:
+
+swal(msg_status,msg_text,alert_type);
+
+    msg_status "Login success"
+	msg_text   "Login is seccessful"
+	alert_type :  "success"  ,   "failure"  , "error"
+	
+	
+routing using button :
+
+log=(e)=>{
+this.props.history.push('/login')
+}
+
+
+
+
+<input type='button'  value='Login'  onClick={this.log} />
+
+
+<BrowserRouter>
+<Route path="/login"   component={Login}/>
+</BrowserRouter>
+
+
+Redirect concept :
+
+redirect --- routing --- forceful 
+
+
+import {Redirect}  from 'react-router-dom';
+
+
+syntax :
+
+
+<Redirect to="/path"/>
+
+localstorage concept :
+
+it is a temporary storage area within the browser 
+
+Go to inspect ---> Application ---> Storage --->  localStorage 
+
+
+javascript ---- localstorage pre defined object / implicit object 
+
+
+setItem("key","value") // this function will create a key value pair in the localstorage
+
+getItem("key") // this function will provide the value for the specific key if the key exsisit. if the key does not exsist it will return flase.
+
+removeItem("key") // this function will remove the key value pair from the localStorage permanently.
+
+Login ---->  useid :  pwd :   
+useiid ---->  localStorage temp store 
+Logout ---->  remove the userid localstorage 
+
+
+

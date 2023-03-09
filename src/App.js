@@ -1,10 +1,12 @@
 import "./App.css";
-import Api1 from "./companents/Api1";
+import Api2 from "./companents/Api2";
+// import Api1 from "./companents/Api1";
 
 function App() {
   return (
     <>
-      <Api1 />
+      {/* <Api1 /> */}
+      <Api2 />
     </>
   );
 }
