@@ -50,7 +50,6 @@ function ApiPost1(props) {
             modules={[Navigation]}
             slidesPerView={4}
             navigation
-            loop
             grabCursor
             breakpoints={{
               320: {
