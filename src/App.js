@@ -1,12 +1,18 @@
 import "./App.css";
-import Api2 from "./companents/Api2";
+import ApiPost1 from "./companents/ApiPost1";
+// import ApiPost from "./companents/ApiPost";
+// import Api3 from "./companents/Api3";
+// import Api2 from "./companents/Api2";
 // import Api1 from "./companents/Api1";
 
 function App() {
   return (
     <>
       {/* <Api1 /> */}
-      <Api2 />
+      {/* <Api2 /> */}
+      {/* <Api3 /> */}
+      {/* <ApiPost /> */}
+      <ApiPost1 />
     </>
   );
 }
